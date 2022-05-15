@@ -21,7 +21,7 @@ app.use(express.static(publicDirectoryPath))
 
 app.get('',(req,res)=>{
     res.render('index',{
-        title : 'Cuaca',
+        title : 'Weather',
         name : 'MEINDRE-Blog'
     })
 })
@@ -83,9 +83,18 @@ app.get('/thermocouple',(req,res)=>{
     })
 })
 
+app.get('/rtd',(req,res)=>{
+    res.render('rtd',{
+        title : 'Artikel',
+        sub : 'RTD Sensor',
+        name : 'MEINDRE-Blog'
+    })
+})
+
 app.get('*',(req,res)=>{
     res.render('404',{
         title : '404 Page',
+        message : 'page not found',
         name : 'MEINDRE-Blog'
     })
 })

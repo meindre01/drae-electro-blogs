@@ -34,7 +34,7 @@ div.main-content{
 footer{
     padding:16px 0;
     border-top: 1px solid #cccccc;
-    margin-top:16px;
+    margin:16px 0;
 }
 
 .portrait{
@@ -63,6 +63,7 @@ h3{
 nav {
     border-top:1px solid #cccccc;
     margin:16px 0;
+    padding-top:16px;
     
 }
 nav a {

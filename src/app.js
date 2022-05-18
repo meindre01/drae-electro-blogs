@@ -69,7 +69,7 @@ app.get('/help',(req,res)=>{
 app.get('/article',(req,res)=>{
     res.render('article',{
         title : 'Artikel',
-        sub : 'Electrical Device',
+        sub : 'Instrument Device',
         name : 'MEINDRE-Blog'
     })
 })

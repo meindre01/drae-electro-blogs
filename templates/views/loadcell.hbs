@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/style.css" rel="stylesheet">
+    <title>Loadcell</title>
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+        {{>nav}}
+
+        <h2>{{article}}</h2>
+        <p class="author">Posted by : <strong>Indra Permana</strong> 22 Mei 2022</p>
+        <img src="img/timbangan.jpeg" width="250px" alt="loadcell">
+
+<p>Loadcell adalah sebuah sensor untuk mengukur beban yang banyak digunakan di dunia industri maupun manufaktur.
+Aplikasi penggunaan loadcell terdapat pada meja timbangan, jembatan timbang, mesin packer semen, weightfeeder, pisterfeeder
+dan masih banyak lainnya. </p>
+ 
+<h3>Apa itu load cell </h3>
+
+<p>Load cell adalah  tranducer yang mengukur sebuah gaya(force) atau beban dan menghasilkan
+output berupa signal listrik. Kebanyakan Load cell di dalamnya terdapat strain gauges 
+sebagai sensornya. Hasil konversi pengukuran beban didapat dari adanya deformasi 
+secara fisik di dalam internal strain gauge. </p>
+
+<h3>Beberapa tipe Loadcell </h3>
+
+<ol>
+<li><p class="type-title">Pneumatik </p>
+<img src="img/pneumatic-loadcell.jpeg" width="500px" alt="loadcell">
+<p >Cara kerja load cell pneumatik adalah angin akan melewati regulator dan mengisi chamber pneumatic loadcell.
+Di atas chamber angin terdapat diaphragm yang elastis dan platform. Beban yang berada
+di atas platform akan menekan diaphragm dan terbaca di pressure gauge angin elektronik, dan
+akan mengirimkan signal listrik ke PLC atau kontrol lainnya. </p></li> 
+
+<li><p class="type-title">Hidrolik </p>
+<img src="img/hydrolic-loadcell.jpeg" width="500px" alt="loadcell">
+<p>Cara kerja load cell hyrolik mirip dengan loadcell pneumatik hanya saja menggunakan oli, Loadcell hidrolik
+terdiri dari platform beban, piston, diaphragm, cairan oli, dan pressure gauge. Beban yang
+ditempatkan di atas platform beban akan memberikan tekanan dan diteruskan oleh piston ke oli. Tekanan yang besar akan berbanding lurus dengan besarnya beban
+Setelah tekanan terkalibrasi dengan benar maka kita dapat mengukur beban secara akurat menggunakan
+loadcell hidrolik. Tekanan akan dirubah menjadi signal listrik dan dikirim ke PLC atau kontrol lainnya.</p></li>
+
+<li><p class="type-title">Strain Gauge</p> 
+<img src="img/strain-gauge.jpeg" width="500px" alt="loadcell">
+<p >Loadcell Strain Gauge adalah loadcell yang populer, loadcell strain gauge adalah tranducer yang 
+menghasilkan output signal ketika mendapatkan beban. Perubahan resistansi berbanding lurus
+dengan besarna beban yang diberikan terhadap loadcell, sehingga mudah untuk dikalibrasi dan 
+digunakan untuk pengukuran beban.</p></li>
+
+<li><p class="type-title">Capasitansi</p>
+<img src="img/capasitive-loadcell.jpeg" width="500px" alt="loadcell">
+<p >Loadcell kapasitor adalah loadcell yang menggunakan muatan listrik sebagai pengukuran beban. 
+Di dalam loadcell terdapat dua plat yang dialiri arus dan di simpan di dalam kedua plat tersebut.
+Besarnya muatan listrik tergantung dari berapa besarnya jarak antara kedua plat. Ketika beban
+ditempatkan di atas platform maka jarak kedua plat akan berubah dan nilai kapasitasi akan berubah
+nilainya dan digunakan sebagai perhitungan beban. </p></li>
+</ol>
+<h3>Jenis dan Ukuran Load Cell</h3>
+<ul class="list-details">
+<li>S-shaped, digunakan untuk mengukur ketegangan dan tekanan. Aplikasinya pada suspended load</li>
+
+<li>Miniature compression ideal digunakan di tempat yang terbatas atau sempit</li>
+
+<li>Tension links untuk mengukur beban pada kabel dan support rod / batang </li>
+
+<li>Bending beam, konstruksi load cell ini sederhana, cocok untuk tempat terbatas</li>
+</ul>
+
+<p>Semoga bermanfaat. Terima kasih</p>
+    </div>
+    {{>footer}}
+</body>
+</html>

@@ -69,16 +69,16 @@ app.get('/help',(req,res)=>{
 app.get('/article',(req,res)=>{
     res.render('article',{
         title : 'Artikel',
-        sub : 'Instrument Device',
-        name : 'MEINDRE-Blog'
+        article : 'Instrument',
+        name : 'Meindre-Blog'
     })
 })
 
 app.get('/thermocouple',(req,res)=>{
     res.render('thermocouple',{
         title : 'Artikel',
-        sub : 'Thermocouple',
-        name : 'MEINDRE-Blog'
+        article : 'Thermocouple',
+        name : 'Meindre-Blog'
         
     })
 })
@@ -86,8 +86,16 @@ app.get('/thermocouple',(req,res)=>{
 app.get('/rtd',(req,res)=>{
     res.render('rtd',{
         title : 'Artikel',
-        sub : 'RTD Sensor',
-        name : 'MEINDRE-Blog'
+        article : 'RTD Sensor',
+        name : 'Meindre-Blog'
+    })
+})
+
+app.get('/loadcell',(req,res)=>{
+    res.render('loadcell',{
+        title : 'Artikel',
+        article : 'LoadCell',
+        name : 'Meindre-Blog'
     })
 })
 
@@ -95,7 +103,7 @@ app.get('*',(req,res)=>{
     res.render('404',{
         title : '404 Page',
         message : 'page not found',
-        name : 'MEINDRE-Blog'
+        name : 'Meindre-Blog'
     })
 })
 

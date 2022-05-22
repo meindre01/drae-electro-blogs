@@ -8,19 +8,23 @@
     <div class="main-content">
         {{>header}}
         
+        {{>nav}}
 
-<h3>Meindre Blogs</h3>
-{{>nav}}
-<h4>{{sub}}</h4>
+<article>
+    <header>
+<h2>{{article}}</h2>
 
-<p>Posted by : <strong>Indra Permana</strong> 15 Mei 2022 </p>
+
+<p class="author">Posted by : <strong>Indra Permana</strong> 15 Mei 2022 </p>
 
 <img src="img/RTD_PT100.JPG" alt="RTD sensor" width="500px">
-<h4>RTD sebagai sensor suhu</h4>
+
+</header>
+<h3>RTD sebagai sensor suhu</h3>
 <p>RTD (Resistance Temperature Detector) banyak digunakan dalam dunia industri. RTD di aplikasikan
 pada pengukuran suhu bearing, pipa pemanas, furnace, gearbox, roller dan proses industri lainnya.</p>
 
-<h4>Apa itu RTD</h4>
+<h3>Apa itu RTD</h3>
 
 <p>RTD adalah sensor yang nilai resistansinya akan berubah ketika ada perubahan suhu.
 Resistansi akan naik ketika suhu pada sensor naik. Sensor RTD adalah bersifat pasif.
@@ -38,7 +42,7 @@ dan jangkauan suhu yang dapat di ukur. </p>
 .00385 Ohm/Ohm/'C. Nominal output DIN sensor RTD sebagai berikut di bawah : </p>
 
 <p>Terdapat tiga standar toleransi kelas DIN RTD. Toleransinya sebagai berikut : </p>
-<ul>
+<ul class="list-details">
 <li>DIN Class A:+-(0.15 + .002 |T|'C)</li>
 <li>DIN Class B:+-(0.3 + .002 |T|'C)</li>
 <li>DIN Class C:+-(1.2 + .005 |T|'C)</li>
@@ -56,14 +60,14 @@ dan jangkauan suhu yang dapat di ukur. </p>
 <tr><td>90&deg;C</td><td>134.70&ohm;</td></tr>				
 <tr><td>100&deg;C</td><td>138.50&ohm;</td></tr>							
 </table>
-<h4>Bagaimana Koneksi Sensornya</h4>
+<h3>Bagaimana Koneksi Sensornya</h3>
 
 <p>RTD Sensor tersedia dalam beberapa jumlah konfigurasi koneksi kabel yang berbeda. 
 Yang paling umum adalah single element, konfigurasi tiga kabel. Skema konfigurasi
 koneksi kabel tersedia sebagai berikut :  </p>
 
 <img src="img/RTD.JPG" width="500px" alt="RTD wire configuration">
-
+</article>
     </div>
     {{>footer}}
 </body>

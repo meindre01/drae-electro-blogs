@@ -6,8 +6,8 @@ body{
     display:flex;
     flex-direction: column;
     min-height:100vh;
-    font-family:arial;
-
+    font-family:sans-serif;
+    font-size:16px;
 }
 
 header{
@@ -56,19 +56,93 @@ button{
 
 
 
+h2{
+    font-size:40px;
+    margin:16px 0;
+}
 h3{
+    font-size:30px;
     color:#333333;
 }
 
-nav {
+h4{
+    font-size:20px;
+}
+
+
+p{
+    font-size:16px;
+    line-height:1.5;
+}
+
+
+
+nav{
     margin:16px 0;
        
 }
-nav a {
+nav a{
     text-decoration:none;
     padding-right:16px;
     cursor:pointer;
     color:cadetblue;
+}
+
+nav a:hover, nav a:active{
+    text-decoration:none;
+    cursor:pointer;
+    color:orangered;
+}
+
+
+
+
+.author{
+    color:black;
+    font-style: italic;
+}
+
+.blog-title{
+    font-size:26px;
+    color:black;
+    text-transform:uppercase;
+    color:#1098ad;
+    font-style:italic
+}
+
+/*.article-title{
+    font-size:30px;
+    color:#444;
+}*/
+
+
+.list-details{
+    list-style: square; 
+}
+
+.list-details li a {
+    color:#444;
+    text-decoration:none;
+}
+
+li{
+    margin-bottom:10px;
+    
+}
+
+li:last-child{
+    margin-bottom:0px;
+}
+
+.list-details li a:hover{
+ color:#cccccc;
+ text-decoration:none;
+ background-color:#333333
+}
+
+.type-title{
+    font-weight:bold;
+   
 }
 
 

@@ -8,11 +8,12 @@
     <div class="main-content">
         {{>header}}
         {{>nav}}
-
-        <h2>{{article}}</h2>
+<article>
+    <header>
+       <h2>{{article}}</h2>
         <p class="author">Posted by : <strong>Indra Permana</strong> 22 Mei 2022</p>
         <img src="img/timbangan.jpeg" width="250px" alt="loadcell">
-
+</header>
 <p>Loadcell adalah sebuah sensor untuk mengukur beban yang banyak digunakan di dunia industri maupun manufaktur.
 Aplikasi penggunaan loadcell terdapat pada meja timbangan, jembatan timbang, mesin packer semen, weightfeeder, pisterfeeder
 dan masih banyak lainnya. </p>
@@ -30,9 +31,9 @@ secara fisik di dalam internal strain gauge. </p>
 <li><p class="type-title">Pneumatik </p>
 <img src="img/pneumatic-loadcell.jpeg" width="500px" alt="loadcell">
 <p >Cara kerja load cell pneumatik adalah angin akan melewati regulator dan mengisi chamber pneumatic loadcell.
-Di atas chamber angin terdapat diaphragm yang elastis dan platform. Beban yang berada
-di atas platform akan menekan diaphragm dan terbaca di pressure gauge angin elektronik, dan
-akan mengirimkan signal listrik ke PLC atau kontrol lainnya. </p></li> 
+Di atas chamber angin terdapat diaphragm yang elastis dan platform beban. Beban yang berada
+di atas platform akan menekan diaphragm dan angin lalu terbaca di pressure gauge. Tekanan angin akan dirubah menjadi signal listrik, dan
+akan mengirimkan signal listrik analog ke PLC atau kontrol lainnya. </p></li> 
 
 <li><p class="type-title">Hidrolik </p>
 <img src="img/hydrolic-loadcell.jpeg" width="500px" alt="loadcell">
@@ -40,12 +41,12 @@ akan mengirimkan signal listrik ke PLC atau kontrol lainnya. </p></li>
 terdiri dari platform beban, piston, diaphragm, cairan oli, dan pressure gauge. Beban yang
 ditempatkan di atas platform beban akan memberikan tekanan dan diteruskan oleh piston ke oli. Tekanan yang besar akan berbanding lurus dengan besarnya beban
 Setelah tekanan terkalibrasi dengan benar maka kita dapat mengukur beban secara akurat menggunakan
-loadcell hidrolik. Tekanan akan dirubah menjadi signal listrik dan dikirim ke PLC atau kontrol lainnya.</p></li>
+loadcell hidrolik. Tekanan akan dirubah menjadi signal listrik analog dan dikirim ke PLC atau kontrol lainnya.</p></li>
 
 <li><p class="type-title">Strain Gauge</p> 
 <img src="img/strain-gauge.jpeg" width="500px" alt="loadcell">
 <p >Loadcell Strain Gauge adalah loadcell yang populer, loadcell strain gauge adalah tranducer yang 
-menghasilkan output signal ketika mendapatkan beban. Perubahan resistansi berbanding lurus
+menghasilkan output signal analog ketika mendapatkan beban. Perubahan resistansi berbanding lurus
 dengan besarna beban yang diberikan terhadap loadcell, sehingga mudah untuk dikalibrasi dan 
 digunakan untuk pengukuran beban.</p></li>
 
@@ -69,6 +70,7 @@ nilainya dan digunakan sebagai perhitungan beban. </p></li>
 </ul>
 
 <p>Semoga bermanfaat. Terima kasih</p>
+</article>
     </div>
     {{>footer}}
 </body>

@@ -70,7 +70,7 @@ app.get('/article',(req,res)=>{
     res.render('article',{
         title : 'Artikel',
         article : 'Instrument',
-        name : 'Meindre-Blog'
+        name : '⚡Meindre-Blog'
     })
 })
 
@@ -78,7 +78,7 @@ app.get('/thermocouple',(req,res)=>{
     res.render('thermocouple',{
         title : 'Artikel',
         article : 'Thermocouple',
-        name : 'Meindre-Blog'
+        name : '⚡Meindre-Blog'
         
     })
 })
@@ -87,7 +87,7 @@ app.get('/rtd',(req,res)=>{
     res.render('rtd',{
         title : 'Artikel',
         article : 'RTD Sensor',
-        name : 'Meindre-Blog'
+        name : '⚡Meindre-Blog'
     })
 })
 
@@ -95,9 +95,19 @@ app.get('/loadcell',(req,res)=>{
     res.render('loadcell',{
         title : 'Artikel',
         article : 'LoadCell',
-        name : 'Meindre-Blog'
+        name : '⚡Meindre-Blog'
     })
 })
+
+app.get('/analyzer',(req,res)=>{
+    res.render('analyzer',{
+        title : 'Artikel',
+        article : 'Gas Analyzer',
+        name : '⚡Meindre-Blog'
+    })
+})
+
+
 
 app.get('*',(req,res)=>{
     res.render('404',{

@@ -83,15 +83,18 @@ nav{
 }
 nav a{
     text-decoration:none;
-    padding-right:16px;
     cursor:pointer;
     color:cadetblue;
+    padding-right:16px;
+   
+    
 }
 
 nav a:hover, nav a:active{
     text-decoration:none;
     cursor:pointer;
-    color:orangered;
+    color:#888888;
+    font-weight: bold;
 }
 
 
@@ -109,6 +112,12 @@ nav a:hover, nav a:active{
     color:#1098ad;
     font-style:italic
 }
+.blog-title::first-letter{
+font-style: normal;
+margin-right:10px;
+}
+
+
 
 /*.article-title{
     font-size:30px;
